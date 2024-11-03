@@ -27,11 +27,19 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
     implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
     implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.projectlombok:lombok'
     compileOnly 'org.projectlombok:lombok'
     developmentOnly 'org.springframework.boot:spring-boot-devtools'
     annotationProcessor 'org.projectlombok:lombok'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+    // WebClient 사용
+    implementation 'org.springframework.boot:spring-boot-starter-webflux'
+    //OpenAi
+    implementation 'io.github.flashvayne:chatgpt-spring-boot-starter:1.0.4'
+    implementation 'org.springframework.boot:spring-boot-starter-tomcat'
+    // MySQL 사용 시
+    implementation 'mysql:mysql-connector-java:8.0.33'
 }
 
 tasks.named('test') {
